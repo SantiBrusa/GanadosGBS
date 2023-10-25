@@ -102,5 +102,7 @@ body {
 
 .noti {
     background-color: rgba(85, 109, 74, 1);
-    padding: 50px;
+    padding: 10px;
+    height: 220px;
+    width: 120px;
 }
