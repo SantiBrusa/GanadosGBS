@@ -80,11 +80,13 @@ body {
 
 .book {
     display: flex;
-    padding: 100px;
-    margin-left: 350px;
+    padding: 10px;
+    margin-left: 5%;
+    margin-top: 11%
+    
 }
 
-.noticias h1 {
+.razas h1 {
     font-size: 55px;
     color: white;
     text-align: center;
@@ -94,15 +96,20 @@ body {
     margin-top: 200px;
 }
 
-.fondo-noticias {
+.fondo-raza {
     background-color: rgba(52, 78, 54, 1);
     padding: 10px;
     margin: 2%;
 }
 
-.noti {
+.raza {
     background-color: rgba(85, 109, 74, 1);
     padding: 10px;
-    height: 220px;
-    width: 120px;
+    height: 250px;
+    width: 220px;
+    text-align: center;
+    color: white;
+    text-decoration: underline 2px ;
+    text-decoration-color: black;
+    text-underline-offset: 10px;
 }
