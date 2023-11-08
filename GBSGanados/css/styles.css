@@ -113,3 +113,31 @@ body {
     text-decoration-color: black;
     text-underline-offset: 10px;
 }
+
+.noticia h1 {
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    text-decoration: underline 2px ;
+    text-decoration-color: black;
+    text-underline-offset: 20px;
+    margin-top: 200px;
+}
+
+.fondo-noti {
+    background-color: rgba(52, 78, 54, 1);
+    padding: 10px;
+    margin: 2%;
+}
+
+.noti {
+    background-color: rgba(85, 109, 74, 1);
+    padding: 10px;
+    height: 450px;
+    width: 420px;
+    text-align: center;
+    color: white;
+    text-decoration: underline 2px ;
+    text-decoration-color: black;
+    text-underline-offset: 10px;
+}
