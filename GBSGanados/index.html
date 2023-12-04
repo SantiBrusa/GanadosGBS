@@ -5,8 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
     <title>Ganados GBS</title>
+
+    <style>
+        /*body {
+            margin: 0;
+            padding: 0;
+        }*/
+    
+        .carrusel-container {
+            position: relative;
+            margin-top: 7%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 600px; /* Ajusta el ancho según tus necesidades */
+        }
+    
+        .carrusel img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
 </head>
+
+
+
 
 <body>
 
@@ -18,10 +46,17 @@
         <div class="bottom">
             <a href="#">Iniciar Sesión</a>
         </div>
+
+        <div id="stickyNavs" class="sticky-navs">
+            <div class="navs">
+                <a href="#noticias"><img src="img/noticias.png" alt="noticias" width="120px"> Noticias</a>
+                <a href="#razas"><img src="img/razas.png" alt="razas" width="120px"> Razas</a>
+                <a href="#comisionistas"><img src="img/articulos.png" alt="articulos" width="120px"> Articulos</a>
+            </div>
+        </div>
     </header>
 
     <main>
-
         <section id="inicio">
             <div class="gnrl">
                 <div class="logo">
@@ -34,24 +69,25 @@
                     </div>
 
                     <div class="navs">
-
-
-
                         <a href="#noticias"><img src="img/noticias.png" alt="noticias" width="120px"> Noticias</a>
-
                         <a href="#razas"><img src="img/razas.png" alt="razas" width="120px"> Razas</a>
-
-                        <a href="#"><img src="img/articulos.png" alt="articulos" width="120px"> Articulos</a>
-
-
+                        <a href="#comisionistas"><img src="img/articulos.png" alt="articulos" width="120px"> Articulos</a>
                     </div>
-
                 </div>
 
-                <div class="book">
-                    <img src="img/mestizo.jpg" alt="book" width="670px" height="510px">
+                <div class="carrusel-container">
+                    <div class="carrusel">
+                        <div><img src="img/laschilcas1.jpg" alt="Imagen 1"></div>
+                        <div><img src="img/laschilcas2.jpg" alt="Imagen 2"></div>
+                        
+                        <div><img src="img/laschilcas4.jpg" alt="Imagen 4"></div>
+                        <!-- Agrega más imágenes según sea necesario -->
+                    </div>
                 </div>
+                
             </div>
+
+
         </section>
 
         <section id="noticias">
@@ -85,7 +121,7 @@
 
                     <div class="raza">
                         <a href="raza.html">
-                            <img src="img/mestizo.jpg" alt="mestizo" width="380px" height="360px">
+                            <img src="img/" alt="mestizo" width="380px" height="360px">
                             <h1>Mestizo</h1>
                         </a>
                     </div>
@@ -102,7 +138,7 @@
 
 
                         <div class="comi">
-                            <a href="#">
+                            <a href="comisionistas.html">
                                 <img src="img/" alt="Comisionista" width="380px" height="360px">
                                 <h1>Title</h1>
                             </a>
@@ -115,4 +151,30 @@
 
 </body>
 
+<!-- Agrega el enlace CDN de jQuery (requerido por Slick Carousel) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Agrega el script de Slick Carousel -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- Inicializa el carrusel -->
+<script>
+    $(document).ready(function(){
+        $('.carrusel').slick({
+            autoplay: true,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    });
+</script>
+</body>
+
+<script src="script.js"></script>
+
+
+
 </html>
+
+

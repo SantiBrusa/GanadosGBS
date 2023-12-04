@@ -1,57 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
-.body {
-    background: rgba(36, 59, 35, 1);
-    margin-left: 0%;
-    margin-right: 0%;
-    font-family: 'Marcellus', serif;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.log {
-    position: relative;
-    left: 25%;
-    top: 300px;
-
-    display: flex;
-    flex-direction: column;
+.header {
+    background-color: #f1f1f1;
+    padding: 15px;
+    text-align: center;
 }
 
-
+.bottom {
+    margin-top: 10px;
+}
 
 .navs {
-    position: relative;
-    top: 340px;
-    left: 22%;
     display: flex;
-    flex-direction: row;
-
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
 }
 
-.h2 {
-    position: relative;
-    top: 470px;
-    left: 220px;
-    display: flex;
-    flex-direction: column;
-
-    color: white;
-
-
-    text-decoration: underline;
-    text-decoration-color: black;
-    text-underline-offset: 10px;
+.sticky-navs {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
 }
 
-.img2 {
-    position: relative;
-    left: 55%;
-    top: -140px;
-    height: 700px;
-    width: 800px;
-
-
-
-    display: flex;
-    flex-direction: row;
-
-}
+/* Resto de tus estilos */

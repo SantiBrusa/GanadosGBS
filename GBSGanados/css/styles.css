@@ -8,12 +8,22 @@ body {
 
 .header {
     display: flex;
-    height:50px;
+    width: 98,9%;
+    height: 50px;
     background-color: rgba(85, 109, 74, 1);
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    position: relative;
 }
+
+.gnrl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
 
 .bottom {
     background-color: rgba(186, 215, 135, 1);
@@ -28,21 +38,12 @@ body {
     color: black;
 }
 
-.gnrl {
-    display: flex;
-}
-
 .logo {
     display: flex;
     flex-direction: column;
-    padding: 100px;
     align-content: start;
     align-items: start;
-}
-
-.img2{
-    margin-left: 220px;
-    margin-top: 10px;
+    margin-left: auto;
 }
 
 .logo h2 {
@@ -52,6 +53,13 @@ body {
     text-decoration: underline 2px ;
     text-decoration-color: black;
     text-underline-offset: 20px;
+}
+
+.sticky-navs {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navs {
@@ -71,20 +79,20 @@ body {
     font-size: 25px;
     display: flex;
     flex-direction: column;
-
 }
 
-.navs a:hover{
+.navs a:hover {
     color: green;
 }
 
-.book {
-    display: flex;
-    padding: 10px;
-    margin-left: 3%;
-    margin-top: 6%;
-    
+/* Resto de tus estilos */
+
+
+.img2{
+    margin-left: 220px;
+    margin-top: 30px;
 }
+
 
 .razas h1 {
     font-size: 55px;
@@ -93,7 +101,7 @@ body {
     text-decoration: underline 2px ;
     text-decoration-color: black;
     text-underline-offset: 20px;
-    margin-top: 200px;
+    margin-top: 10%;
 }
 
 .fondo-raza {
@@ -121,7 +129,7 @@ body {
     text-decoration: underline 2px ;
     text-decoration-color: black;
     text-underline-offset: 20px;
-    margin-top: 200px;
+    margin-top: 10%;
 }
 
 .fondo-noti {
@@ -149,7 +157,7 @@ body {
     text-decoration: underline 2px ;
     text-decoration-color: black;
     text-underline-offset: 20px;
-    margin-top: 200px;
+    margin-top: 10%;
 }
 
 .fondo-com {
@@ -171,15 +179,35 @@ body {
 }
 
 /*noticia.html*/
+.gnrl2 {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;*/
+    text-align: center;
+}
 
 .img4 {
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    background-color: gray;
-    width: 400px;
-    height: 500px;
+    padding: 20px;
+    background-color: #556d4a;
+    width: 719px;
+    height: 680px;
     margin-left: 4%;
     margin-top: 4%;
 }
 
+.text {
+    flex-direction: column;
+    margin-top: 7%;
+}
+
+.title {
+    text-align: center;
+    color: rgb(209, 195, 195);
+}
+
+.desc {
+    padding: 30px;
+    color: rgb(209, 195, 195);
+}
