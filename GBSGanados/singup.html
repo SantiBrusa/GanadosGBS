@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Tu Página</title>
+    <link rel="stylesheet" href="css/singStyle.css">
+    <title>Ganados GBS - Iniciar Sesión</title>
 </head>
-<body>
-    <header class="header">
-        <div>
-            <img src="img/logoredondo.png" alt="Logo" width="60px">
-        </div>
 
-        <div class="bottom">
-            <a href="#">Iniciar Sesión</a>
-        </div>
+<body class="body">
+
+    <header class="header">
+
     </header>
 
-    <div class="navs">
-        <a href="#noticias"><img src="img/noticias.png" alt="noticias" width="120px"> Noticias</a>
-        <a href="#razas"><img src="img/razas.png" alt="razas" width="120px"> Razas</a>
-        <a href="#comisionistas"><img src="img/articulos.png" alt="articulos" width="120px"> Articulos</a>
-    </div>
+    <main class="main">
 
-    <div id="stickyNavs" class="sticky-navs"></div>
+        <div id="login-form">
+            <h2>Iniciar Sesión</h2>
+            <form id="form">
+                <label for="username">Correo Electrónico:</label>
+                <input type="text" id="username" name="username" placeholder="Ingresa tu correo" required>
+                <br>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                <div id="forgot-password">
+                    <a href="#">¿Has olvidado tu contraseña?</a>
+                </div>
+                <br>
+                <button type="button" onclick="confirmar()">Confirmar</button>
+                <button type="button" onclick="cancelar()">Cancelar</button>
+            </form>
+        </div>
 
-    <!-- Resto del contenido de tu página -->
+    </main>
 
-    <script src="script.js"></script>
+    <script>
+        function confirmar() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "usuario" && password === "contraseña") {
+                alert("Inicio de sesión exitoso");
+            } else {
+                alert("Error de inicio de sesión. Verifica tu usuario y contraseña.");
+            }
+        }
+
+        function cancelar() {
+            // Redirigir al usuario a index.html
+            window.location.href = "index.html";
+        }
+    </script>
 </body>
+
 </html>
