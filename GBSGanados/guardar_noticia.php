@@ -23,10 +23,10 @@ $image = $_FILES['image']['name'];
 $image_tmp = $_FILES['image']['tmp_name'];
 
 // Mover la imagen a un directorio específico
-move_uploaded_file($image_tmp, "directorio_de_imagenes/" . $image);
+move_uploaded_file($image_tmp, "img/" . $image);
 
 // Insertar datos en la base de datos
-$sql = "INSERT INTO tu_tabla_noticias (title, image, text) VALUES ('$title', '$image', '$text')";
+$sql = "INSERT INTO tb_noticia (title, image, text) VALUES ('$title', '$image', '$text')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Noticia guardada correctamente";
